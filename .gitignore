@@ -1,2 +1,5 @@
 enunciado.ipynb
 __pycache__/
+catboost_info/
+*_env/
+*.ipynb_checkpoints/
