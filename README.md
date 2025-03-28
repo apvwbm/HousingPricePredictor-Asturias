@@ -1,6 +1,6 @@
 <h1>🏠 ML_AsturiasHousingPricePredictor</h1>
 <p>
- <img src="https://img.shields.io/badge/Python-3.12.8-blue" alt="Python">
+ <img src="https://img.shields.io/badge/Python-3.12.8-blue?style=flat&logo=python&logoColor=ffdd54" alt="Python">
  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
  <img src="https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas" alt="Pandas">
  <img src="https://img.shields.io/badge/XGBoost-success-brightgreen" alt="XGBoost">
@@ -36,31 +36,28 @@
 <pre>
 📂 ML_AsturiasHousingPricePredictor/
 ├── 📂 src/
-│   ├── 📂 data_sample/          # Datos de muestra en formato CSV.
-│   │   └── idealista_data_asturias.csv
-│   ├── 📂 img/                  # Imágenes y gráficos generados durante el EDA.
-│   │   ├── price_distribution.png
-│   │   ├── correlation_heatmap.png
+│   ├── 📂 data_sample/
+│   │   ├── cleaned_dataset.csv
+│   │   └── scrap_data_asturias.csv
+│   ├── 📂 img/
+│   │   ├── additional_features.png
+│   │   ├── correlation_heatmap_extended.png
 │   │   └── ...
-│   ├── 📂 notebooks/            # Notebooks de pruebas y exploración.
-│   │   ├── 01_eda.ipynb
-│   │   ├── 02_preprocessing.ipynb
-│   │   └── 03_model_training.ipynb
-│   ├── 📂 results_notebook/     # Notebook final con resultados consolidados.
+│   ├── 📂 models/
+│   │   ├── xgb_full_model.pkl
+│   │   └── xgb_reduced_model.pkl
+│   ├── 📂 notebooks/
+│   │   ├── eda.ipynb
+│   │   └── preprocessing.ipynb
+│   ├── 📂 results_notebook/
 │   │   └── final_results.ipynb
-│   ├── 📂 models/               # Modelos entrenados guardados.
-│   │   ├── random_forest_model.pkl
-│   │   ├── xgboost_model.pkl
-│   │   └── ...
-│   └── 📂 utils/                # Funciones auxiliares y módulos personalizados.
-│       ├── preprocessing.py
-│       ├── evaluation.py
-│       └── visualization.py
+│   └── 📂 utils/
+│       ├── bootcampviztools.py
+│       └── toolbox_ML.py
 │
-├── .gitignore                  # Archivos y carpetas a ignorar por Git.
-├── README.md                   # Descripción breve del proyecto.
-├── requirements.txt            # Archivo de requisitos del proyecto.
-└── LICENSE                     # Licencia del proyecto.
+├── .gitignore
+├── README.md
+└── requirements.txt
 </pre>
 
 <hr>
@@ -81,12 +78,12 @@
 <ol>
   <li><strong>Clone the repository:</strong>
     <pre><code>git clone https://github.com/apvwbm/ML_AsturiasHousingPricePredictor.git
-    cd ML_AsturiasHousingPricePredictor</code></pre>
+cd ML_AsturiasHousingPricePredictor</code></pre>
   </li>
   <li><strong>(Optional) Create a virtual environment:</strong>
     <pre><code>python -m venv venv
-    source venv/bin/activate # macOS/Linux
-    venv\Scripts\activate # Windows</code></pre>
+source venv/bin/activate # macOS/Linux
+venv\Scripts\activate # Windows</code></pre>
   </li>
   <li><strong>Install the dependencies:</strong>
     <pre><code>pip install -r requirements.txt</code></pre>
