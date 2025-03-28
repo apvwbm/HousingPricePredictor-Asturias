@@ -1,45 +1,38 @@
 <h1>🏠 ML_AsturiasHousingPricePredictor</h1>
-
 <p>
-  <img src="https://img.shields.io/badge/Python-3.10-blue" alt="Python">
-  <img src="https://img.shields.io/badge/Scikit--Learn-OK-orange" alt="Scikit-learn">
-  <img src="https://img.shields.io/badge/XGBoost-success-brightgreen" alt="XGBoost">
+ <img src="https://img.shields.io/badge/Python-3.12.8-blue" alt="Python">
+ <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+ <img src="https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas" alt="Pandas">
+ <img src="https://img.shields.io/badge/XGBoost-success-brightgreen" alt="XGBoost">
 </p>
 
 <hr>
 
-<h2>📝 Descripción del Proyecto</h2>
-
-<p>
-  Este proyecto aplica técnicas de Machine Learning para <strong>predecir el precio de viviendas en Asturias</strong> a partir de datos reales obtenidos desde Idealista.
-</p>
-<p>
-  Los datos incluyen información como:
-</p>
+<h2>📝 Project Description</h2>
+<p> This project applies Machine Learning techniques to <strong>predict housing prices in Asturias, Spain</strong>, using real-world data collected from Idealista. </p>
+<p> The dataset includes information such as: </p>
 <ul>
-  <li>Tipo de inmueble</li>
-  <li>Ubicación (barrio, municipio, distrito)</li>
-  <li>Superficie construida</li>
-  <li>Número de habitaciones y baños</li>
-  <li>Precio de venta</li>
+  <li>Property type</li>
+  <li>Location (neighborhood, municipality, district)</li>
+  <li>Built area (square meters)</li>
+  <li>Number of bedrooms and bathrooms</li>
+  <li>Selling price</li>
 </ul>
-<p>
-  El objetivo es crear una herramienta que ayude a compradores, agentes o analistas a <strong>tomar decisiones informadas</strong> en el mercado inmobiliario.
-</p>
+<p> The goal is to develop a tool that helps buyers, real estate agents, or analysts to <strong>make informed decisions</strong> in the property market. </p>
 
 <hr>
 
-<h2>🎯 Objetivos</h2>
+<h2>🎯 Objectives</h2>
 <ul>
-  <li>🧠 Predecir el precio de viviendas en función de sus características.</li>
-  <li>📊 Identificar las variables más influyentes en el precio (metros cuadrados, ubicación, etc.).</li>
-  <li>⚖️ Comparar diferentes modelos de Machine Learning para seleccionar el más adecuado.</li>
-  <li>🌍 Proporcionar una solución práctica para el análisis del mercado inmobiliario en Asturias.</li>
+  <li>🧠 Predict housing prices based on property features.</li>
+  <li>📊 Identify the most influential variables affecting price (square meters, location, etc.).</li>
+  <li>⚖️ Compare different Machine Learning models to choose the most suitable one.</li>
+  <li>🌍 Provide a practical solution for analyzing the real estate market in Asturias.</li>
 </ul>
 
 <hr>
 
-<h2>📑 Estructura del Proyecto</h2>
+<h2>📑 Project Structure</h2>
 <pre>
 📂 ML_AsturiasHousingPricePredictor/
 ├── 📂 src/
@@ -72,77 +65,65 @@
 
 <hr>
 
-<h2>🛠️ Tecnologías utilizadas</h2>
+<h2>🛠️ Technologies Used</h2>
 <ul>
   <li>Python</li>
   <li>Pandas, NumPy</li>
   <li>Matplotlib, Seaborn</li>
   <li>Scikit-learn</li>
   <li>XGBoost, CatBoost, LightGBM</li>
-  <li>SHAP (interpretabilidad)</li>
   <li>Jupyter Notebook</li>
 </ul>
 
 <hr>
 
-<h2>🚀 Cómo ejecutar el proyecto</h2>
-
+<h2>🚀 How to Run the Project</h2>
 <ol>
-  <li><strong>Clona el repositorio:</strong>
+  <li><strong>Clone the repository:</strong>
     <pre><code>git clone https://github.com/apvwbm/ML_AsturiasHousingPricePredictor.git
-cd ML_AsturiasHousingPricePredictor</code></pre>
+    cd ML_AsturiasHousingPricePredictor</code></pre>
   </li>
-
-  <li><strong>(Opcional) Crea un entorno virtual:</strong>
+  <li><strong>(Optional) Create a virtual environment:</strong>
     <pre><code>python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows</code></pre>
+    source venv/bin/activate # macOS/Linux
+    venv\Scripts\activate # Windows</code></pre>
   </li>
-
-  <li><strong>Instala las dependencias:</strong>
+  <li><strong>Install the dependencies:</strong>
     <pre><code>pip install -r requirements.txt</code></pre>
   </li>
-
-  <li><strong>Explora los notebooks:</strong>
-    <pre><code>jupyter notebook src/notebooks/01_eda.ipynb</code></pre>
+  <li><strong>Explore the notebooks:</strong>
+    <pre><code>jupyter notebook src/notebooks/*.ipynb</code></pre>
   </li>
-
-  <li><strong>Consulta los resultados finales:</strong>
-    <pre><code>src/results_notebook/final_results.ipynb</code></pre>
+  <li><strong>Check the final results:</strong>
+    <pre><code>jupyter notebook src/results_notebook/final_results.ipynb</code></pre>
   </li>
 </ol>
 
 <hr>
 
-<h2>📊 Resultados</h2>
-
-<p>El modelo seleccionado fue <strong>XGBoost</strong>, entrenado únicamente con las 7 variables más influyentes según <code>permutation_importance</code>. Obtuvo los siguientes resultados:</p>
-
+<h2>📊 Results</h2>
+<p>The selected model was <strong>XGBoost</strong>, trained using only the 7 most influential features according to <code>permutation_importance</code>. It achieved the following results:</p>
 <ul>
-  <li><strong>MAE</strong>: 7.446 €</li>
-  <li><strong>RMSE</strong>: 46.321 €</li>
+  <li><strong>MAE</strong>: €7,446</li>
+  <li><strong>RMSE</strong>: €46,321</li>
   <li><strong>R²</strong>: 0.9175</li>
 </ul>
-
-<p><strong>📌 Esto demuestra que con un conjunto reducido de variables se puede lograr una predicción precisa y eficiente del precio de la vivienda.</strong></p>
+<p><strong>📌 This demonstrates that precise and efficient housing price predictions are achievable even with a reduced set of variables.</strong></p>
 
 <hr>
 
-<h2>✅ Conclusiones</h2>
-
+<h2>✅ Conclusions</h2>
 <ul>
-  <li>El modelo puede estimar precios de viviendas en Asturias con una <strong>precisión del 91.7% (R²)</strong>.</li>
-  <li>La <strong>superficie construida</strong> y la <strong>ubicación a nivel de barrio</strong> son los factores más determinantes.</li>
-  <li>Se ha logrado reducir el número de variables sin perder precisión, mejorando la eficiencia.</li>
-  <li>El enfoque es adaptable a otras regiones y puede servir como base para herramientas de valoración automática.</li>
+  <li>The model can estimate housing prices in Asturias with an <strong>accuracy of 91.7% (R²)</strong>.</li>
+  <li><strong>Built area</strong> and <strong>neighborhood location</strong> are the most determining factors.</li>
+  <li>The number of features was successfully reduced without sacrificing accuracy, enhancing efficiency.</li>
+  <li>This approach is adaptable to other regions and serves as a basis for automated valuation tools.</li>
 </ul>
 
 <hr>
 
-<h2>👤 Autor</h2>
-
+<h2>👤 Author</h2>
 <p><strong>Aitor Pérez</strong></p>
 <p>
-  <a href="https://www.linkedin.com/in/aitor-perez/" target="_blank">LinkedIn</a> |
-  <a href="https://github.com/apvwbm" target="_blank">GitHub</a>
+ <a href="https://www.linkedin.com/in/aitor-perez/" target="_blank">LinkedIn</a> | <a href="https://github.com/apvwbm" target="_blank">GitHub</a>
 </p>

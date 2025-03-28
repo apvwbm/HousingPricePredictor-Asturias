@@ -1,5 +1,6 @@
 enunciado.ipynb
+.vscode/
 __pycache__/
 catboost_info/
-*_env/
+*env/
 *.ipynb_checkpoints/
