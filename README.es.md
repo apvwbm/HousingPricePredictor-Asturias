@@ -66,12 +66,12 @@
 <ol>
     <li><strong>Clona el repositorio:</strong>
         <pre><code>git clone https://github.com/apvwbm/ML_AsturiasHousingPricePredictor.git 
-        cd ML_AsturiasHousingPricePredictor</code></pre>
+cd ML_AsturiasHousingPricePredictor</code></pre>
     </li>
     <li><strong>(Opcional) Crea un entorno virtual:</strong>
         <pre><code>python -m venv venv
-        source venv/bin/activate # macOS/Linux 
-        venv\Scripts\activate # Windows</code></pre>
+source venv/bin/activate # macOS/Linux 
+venv\Scripts\activate # Windows</code></pre>
     </li>
     <li><strong>Instala las dependencias:</strong>
         <pre><code>pip install -r requirements.txt</code></pre>
