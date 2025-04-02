@@ -1,10 +1,20 @@
+# Análisis de datos y visualización
 pandas==2.2.3
 numpy==1.26.4
 matplotlib==3.9.2
 seaborn==0.13.2
-scikit-image==0.25.2
+ipython==8.12.3
+
+# Machine Learning
 scikit-learn==1.6.0
+scikit-image==0.25.2
 sklearn-compat==0.1.3
-catboost==1.2.7
 xgboost==2.1.4
+catboost==1.2.7
 category_encoders==2.8.1
+
+# Visualización geoespacial
+folium==0.19.5
+
+# Otros
+pickleshare==0.7.5

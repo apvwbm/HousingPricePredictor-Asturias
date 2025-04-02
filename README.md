@@ -1,4 +1,7 @@
-<h1>🏠 ML_AsturiasHousingPricePredictor</h1>
+<h1>🏠 Asturias Housing Price Predictor</h1>
+<p>
+ <a href="https://github.com/apvwbm/ML_AsturiasHousingPricePredictor/blob/main/README.es.md"><img src="https://img.shields.io/badge/ES-Espa%C3%B1ol-red?style=for-the-badge" alt="Español"></a>
+</p>
 <p>
  <img src="https://img.shields.io/badge/Python-3.12.8-blue?style=flat&logo=python&logoColor=ffdd54" alt="Python">
  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
